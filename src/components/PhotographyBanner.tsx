@@ -6,7 +6,7 @@ const PhotographyBanner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const texts = ["БИЗНЕС.", "БРЕНДЫ."]
+  const texts = ["АДЫГЕИ.", "ПЛАНЕТЫ."]
 
   useEffect(() => {
     const typeSpeed = isDeleting ? 40 : 100
@@ -44,7 +44,7 @@ const PhotographyBanner: React.FC = () => {
 
         .photography-banner {
           margin: 0;
-          background-color: #002b36;
+          background-color: #012a10;
           background-image: url("https://www.yudiz.com/codepen/photography-banner/frame.png");
           background-size: cover;
           background-repeat: no-repeat;
@@ -54,7 +54,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .photography-banner *::selection {
-          background-color: rgba(241, 231, 40, 0.2);
+          background-color: rgba(74, 180, 74, 0.2);
           color: #ffffff;
         }
 
@@ -75,7 +75,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.4;
-          background: #d33682;
+          background: #2d8a2d;
           filter: blur(162px);
           height: 35%;
           width: 55%;
@@ -103,7 +103,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .left-part h1 .text {
-          color: #d33682;
+          color: #4ab44a;
           display: block;
           height: clamp(100px, 15vw, 120px);
         }
@@ -201,7 +201,7 @@ const PhotographyBanner: React.FC = () => {
         .book-link .arrow::after {
           position: absolute;
           content: "";
-          background-color: #d33682;
+          background-color: #4ab44a;
           transition: all ease-in-out 0.35s;
           transform-origin: 0 0;
           border-radius: 30px;
@@ -230,7 +230,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .book-link .arrow span {
-          background-color: #d33682;
+          background-color: #4ab44a;
           height: 2px;
           width: 100%;
           display: inline-block;
@@ -245,7 +245,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .book-link .arrow span::before {
-          background-color: #d33682;
+          background-color: #4ab44a;
           content: "";
           height: 100%;
           width: 15px;
@@ -270,7 +270,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.4;
-          background: #d33682;
+          background: #2d8a2d;
           filter: blur(112px);
           height: 35%;
           width: 55%;
@@ -293,14 +293,14 @@ const PhotographyBanner: React.FC = () => {
 
         .particle {
           position: absolute;
-          background: rgba(211, 54, 130, 0.6);
+          background: rgba(74, 180, 74, 0.6);
           border-radius: 50%;
           pointer-events: none;
           animation: float linear infinite;
         }
 
         .particle:nth-child(odd) {
-          background: rgba(203, 75, 22, 0.4);
+          background: rgba(45, 138, 45, 0.4);
         }
 
         .particle:nth-child(3n) {
@@ -492,7 +492,7 @@ const PhotographyBanner: React.FC = () => {
 
         .features-section {
           padding: 100px 30px;
-          background-color: #073642;
+          background-color: #02400f;
           position: relative;
           overflow: hidden;
         }
@@ -501,7 +501,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.3;
-          background: #d33682;
+          background: #4ab44a;
           filter: blur(140px);
           height: 40%;
           width: 40%;
@@ -531,7 +531,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .features-content h2 .highlight {
-          color: #d33682;
+          color: #4ab44a;
         }
 
         .features-list {
@@ -542,7 +542,7 @@ const PhotographyBanner: React.FC = () => {
 
         .feature-item {
           padding: 25px 0;
-          border-bottom: 1px solid #333;
+          border-bottom: 1px solid #1a4a1a;
           display: flex;
           align-items: center;
           gap: 20px;
@@ -551,14 +551,14 @@ const PhotographyBanner: React.FC = () => {
         .feature-icon {
           width: 50px;
           height: 50px;
-          background: #d33682;
+          background: #4ab44a;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           font-size: 20px;
           font-weight: bold;
-          color: #002b36;
+          color: #012a10;
           flex-shrink: 0;
         }
 
@@ -580,7 +580,7 @@ const PhotographyBanner: React.FC = () => {
 
         .testimonials-section {
           padding: 100px 30px;
-          background-color: #002b36;
+          background-color: #012a10;
           position: relative;
           overflow: hidden;
         }
@@ -589,7 +589,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.4;
-          background: #d33682;
+          background: #2d8a2d;
           filter: blur(120px);
           height: 50%;
           width: 30%;
@@ -638,13 +638,14 @@ const PhotographyBanner: React.FC = () => {
 
         .testimonial-card {
           background: rgba(255, 255, 255, 0.05);
-          border: 1px solid #333;
+          border: 1px solid #1a4a1a;
           border-radius: 20px;
           padding: 40px 30px;
           position: relative;
           backdrop-filter: blur(10px);
-          width: 400px;
-          flex-shrink: 0;
+          min-width: 400px;
+          max-width: 400px;
+          text-align: left;
         }
 
         .testimonial-quote {
@@ -668,16 +669,16 @@ const PhotographyBanner: React.FC = () => {
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          background: #d33682;
+          background: #4ab44a;
           display: flex;
           align-items: center;
           justify-content: center;
           font-weight: bold;
-          color: #002b36;
+          color: #012a10;
         }
 
         .author-info h4 {
-          color: #cb4b16;
+          color: #6fd86f;
           font-family: "Inter", sans-serif;
           font-size: 14px;
           margin: 0;
@@ -693,7 +694,7 @@ const PhotographyBanner: React.FC = () => {
 
         .cta-section {
           padding: 120px 30px;
-          background-color: #073642;
+          background-color: #02400f;
           position: relative;
           overflow: hidden;
         }
@@ -702,7 +703,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.6;
-          background: #d33682;
+          background: #2d8a2d;
           filter: blur(180px);
           height: 60%;
           width: 80%;
@@ -729,7 +730,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .cta-subtitle {
-          color: #d33682;
+          color: #4ab44a;
           font-family: "Montserrat";
           font-size: 26px;
           line-height: 1.6;
@@ -748,8 +749,8 @@ const PhotographyBanner: React.FC = () => {
 
         .cta-button {
           padding: 18px 40px;
-          background: #d33682;
-          color: #002b36;
+          background: #4ab44a;
+          color: #012a10;
           text-decoration: none;
           font-family: "Montserrat";
           font-size: 16px;
@@ -757,12 +758,12 @@ const PhotographyBanner: React.FC = () => {
           text-transform: uppercase;
           border-radius: 50px;
           transition: all 0.3s ease;
-          border: 2px solid #d33682;
+          border: 2px solid #4ab44a;
         }
 
         .cta-button:hover {
           background: transparent;
-          color: #d33682;
+          color: #4ab44a;
         }
 
         .cta-button.secondary {
@@ -773,8 +774,8 @@ const PhotographyBanner: React.FC = () => {
 
         .cta-button.secondary:hover {
           background: transparent;
-          color: #d33682;
-          border: 2px solid #d33682;
+          color: #4ab44a;
+          border: 2px solid #4ab44a;
         }
 
         @media screen and (max-width: 1199px) {
@@ -828,7 +829,7 @@ const PhotographyBanner: React.FC = () => {
             <div className="left-part">
               <h1>
                 <span className="d-flex">
-                  {["С", "О", "З", "Д", "А", "Ё", "М"].map((char, index) => (
+                  {["Л", "Е", "С", "А"].map((char, index) => (
                     <span key={index} className="char tracking-tighter" style={{ animationDelay: `${index * 0.08}s` }}>
                       {char === " " ? "\u00A0" : char}
                     </span>
@@ -837,10 +838,11 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="tracking-widest">
-                Помогаем предпринимателям запускать цифровые продукты быстрее с помощью современных технологий
+                Школьный экологический проект по восстановлению и охране лесных экосистем Адыгеи через посадку деревьев.<br/>
+                Авторы: Соколова Ульяна и Воронцов Кирилл, 9«Б» класс.
               </p>
-              <a href="#cta" className="book-link">
-                <span className="linktext tracking-tighter text-3xl">Начать проект</span>
+              <a href="#plan" className="book-link">
+                <span className="linktext tracking-tighter text-3xl">Изучить проект</span>
                 <span className="arrow">
                   <span></span>
                 </span>
@@ -867,63 +869,101 @@ const PhotographyBanner: React.FC = () => {
                 <img
                   src="https://www.yudiz.com/codepen/photography-banner/wave.svg"
                   alt="Line"
-                  style={{ filter: "hue-rotate(280deg) saturate(1.5)" }}
+                  style={{ filter: "hue-rotate(80deg) saturate(1.5)" }}
                 />
                 <img
                   src="https://www.yudiz.com/codepen/photography-banner/wave.svg"
                   alt="Line"
-                  style={{ filter: "hue-rotate(280deg) saturate(1.5)" }}
+                  style={{ filter: "hue-rotate(80deg) saturate(1.5)" }}
                 />
               </div>
               <div className="bg-dash-circle">
                 <img
                   src="https://www.yudiz.com/codepen/photography-banner/dash-circle.svg"
                   alt="dash-circle"
-                  style={{ filter: "hue-rotate(280deg) saturate(1.5)" }}
+                  style={{ filter: "hue-rotate(80deg) saturate(1.5)" }}
                 />
               </div>
             </div>
           </section>
 
-          <section className="features-section">
+          <section className="features-section" id="plan">
             <div className="features-container">
               <div className="features-content">
-                <h2>Почему выбирают нас?</h2>
+                <h2>
+                  План <span className="highlight">проекта</span>
+                </h2>
               </div>
               <ul className="features-list">
                 <li className="feature-item">
                   <div className="feature-icon">01</div>
                   <div className="feature-text">
-                    <h3>Опытная команда</h3>
+                    <h3>Введение</h3>
                     <p className="font-light tracking-wider">
-                      Более 10 лет опыта в разработке цифровых продуктов для бизнеса любого масштаба
+                      Актуальность проекта: почему восстановление лесов Адыгеи — важная задача сегодня
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">02</div>
                   <div className="feature-text">
-                    <h3>Современные технологии</h3>
+                    <h3>География и климат Адыгеи</h3>
                     <p className="tracking-wider">
-                      Используем передовые инструменты и фреймворки для создания быстрых и надёжных решений
+                      Геометрическое положение республики, климатические условия и их влияние на лесные экосистемы
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">03</div>
                   <div className="feature-text">
-                    <h3>Индивидуальный подход</h3>
+                    <h3>Проблемы экосистем</h3>
                     <p className="tracking-wider">
-                      Каждый проект уникален — мы адаптируем решения под ваши конкретные задачи и цели
+                      Анализ угроз: вырубка, пожары, засухи и антропогенное воздействие на леса Адыгеи
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">04</div>
                   <div className="feature-text">
-                    <h3>Поддержка 24/7</h3>
+                    <h3>Методы восстановления лесов</h3>
                     <p className="tracking-wider">
-                      Обеспечиваем техническую поддержку и сопровождение на всех этапах работы
+                      Современные подходы к лесовосстановлению: посадка саженцев, посев семян, содействие естественному возобновлению
+                    </p>
+                  </div>
+                </li>
+                <li className="feature-item">
+                  <div className="feature-icon">05</div>
+                  <div className="feature-text">
+                    <h3>Селекция видов деревьев</h3>
+                    <p className="tracking-wider">
+                      Выбор оптимальных пород деревьев для посадки с учётом климата и почв Адыгеи
+                    </p>
+                  </div>
+                </li>
+                <li className="feature-item">
+                  <div className="feature-icon">06</div>
+                  <div className="feature-text">
+                    <h3>Организация посадки</h3>
+                    <p className="tracking-wider">
+                      Практическая организация процесса: площадки, сроки, участники и партнёры
+                    </p>
+                  </div>
+                </li>
+                <li className="feature-item">
+                  <div className="feature-icon">07</div>
+                  <div className="feature-text">
+                    <h3>Образовательная программа</h3>
+                    <p className="tracking-wider">
+                      Вовлечение школьников и местного сообщества в экологическое просвещение
+                    </p>
+                  </div>
+                </li>
+                <li className="feature-item">
+                  <div className="feature-icon">08</div>
+                  <div className="feature-text">
+                    <h3>Оценка эффективности</h3>
+                    <p className="tracking-wider">
+                      Критерии и методы измерения результатов: выживаемость деревьев, площадь покрытия, биоразнообразие
                     </p>
                   </div>
                 </li>
@@ -933,77 +973,77 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="testimonials-section">
             <div className="testimonials-container">
-              <h2 className="testimonials-title">Отзывы клиентов</h2>
+              <h2 className="testimonials-title">Факты о лесах</h2>
               <div className="testimonials-marquee">
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Леса Адыгеи занимают около 40% территории республики и являются частью Кавказского биосферного заповедника — объекта Всемирного наследия ЮНЕСКО."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">АС</div>
+                    <div className="author-avatar">🌳</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Кавказский заповедник</h4>
+                      <p>Объект ЮНЕСКО с 1999 года</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Одно дерево поглощает до 20 кг углекислого газа в год и выделяет кислород, необходимый для дыхания двух человек."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">🌿</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Экологическая польза</h4>
+                      <p>Данные лесной науки</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "В лесах Адыгеи обитают свыше 60 видов млекопитающих, в том числе бурый медведь, кавказский олень и западнокавказский тур."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">🐻</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Биоразнообразие</h4>
+                      <p>Фауна Адыгеи</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Леса Адыгеи занимают около 40% территории республики и являются частью Кавказского биосферного заповедника — объекта Всемирного наследия ЮНЕСКО."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">АС</div>
+                    <div className="author-avatar">🌳</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Кавказский заповедник</h4>
+                      <p>Объект ЮНЕСКО с 1999 года</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Одно дерево поглощает до 20 кг углекислого газа в год и выделяет кислород, необходимый для дыхания двух человек."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">🌿</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Экологическая польза</h4>
+                      <p>Данные лесной науки</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "В лесах Адыгеи обитают свыше 60 видов млекопитающих, в том числе бурый медведь, кавказский олень и западнокавказский тур."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">🐻</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Биоразнообразие</h4>
+                      <p>Фауна Адыгеи</p>
                     </div>
                   </div>
                 </div>
@@ -1013,16 +1053,16 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="cta-section" id="cta">
             <div className="cta-container">
-              <h2 className="cta-title text-center">Готовы начать?</h2>
+              <h2 className="cta-title text-center">Действуй!</h2>
               <p className="cta-subtitle">
-                Присоединяйтесь к сотням компаний, которые уже трансформировали свой бизнес. Ваш путь к успеху начинается здесь.
+                Каждое посаженное дерево — это вклад в будущее лесов Адыгеи и здоровье нашей планеты.
               </p>
               <div className="cta-buttons">
-                <a href="#" className="cta-button">
-                  Обсудить проект
+                <a href="#plan" className="cta-button">
+                  Читать проект
                 </a>
                 <a href="#" className="cta-button secondary">
-                  Посмотреть кейсы
+                  Присоединиться
                 </a>
               </div>
             </div>
